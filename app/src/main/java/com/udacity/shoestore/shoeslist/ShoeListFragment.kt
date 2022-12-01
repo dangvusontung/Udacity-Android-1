@@ -40,8 +40,8 @@ class ShoeListFragment : Fragment() {
         viewModel.shoeList.observe(viewLifecycleOwner) {
             if (it.isNotEmpty()) {
                 it.forEach { shoe ->
-                    val text = StringBuilder(shoe.name).append("-").append(shoe.company).append("-")
-                        .append(shoe.size).append("-").append(shoe.description).toString()
+                    val text = "Name: ${shoe.name}, Size: ${shoe.size}, Company: ${shoe.company}, Description: ${shoe.description}"
+
                     val textView = TextView(requireContext())
                     val layoutParams = LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,

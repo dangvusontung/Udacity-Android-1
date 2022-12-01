@@ -59,6 +59,7 @@
                 android:layout_height="match_parent"/>
 
             <EditText
+                android:inputType="number"
                 android:layout_weight="4"
                 android:id="@+id/edtShoeSize"
                 android:hint="@string/shoe_size"
