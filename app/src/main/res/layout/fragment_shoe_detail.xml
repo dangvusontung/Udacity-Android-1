@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".shoedetail.ShoeDetailFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/shoe_name"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_weight="4"
+                android:id="@+id/edtShoeName"
+                android:hint="@string/shoe_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/company"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_weight="4"
+                android:id="@+id/edtCompany"
+                android:hint="@string/company"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/shoe_size"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_weight="4"
+                android:id="@+id/edtShoeSize"
+                android:hint="@string/shoe_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/description"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:layout_weight="4"
+                android:id="@+id/edtDescription"
+                android:hint="@string/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/cancel"
+                android:id="@+id/btnCancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="@string/save"
+                android:id="@+id/btnSave"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

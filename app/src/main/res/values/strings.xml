@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_with_existing">Login With Existing Account</string>
+    <string name="go_to_instruction">Instruction</string>
+    <string name="welcome">Welcome To Shoes App</string>
+    <string name="take_me_to_instruction">Take me to instruction!</string>
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="instruction_title">I don\'t know what to put here…</string>
+    <string name="instruction_content">So \n I \n Hope \n This \n Is \n Okay</string>
+    <string name="go_to_shoes_list">Go to shoe list!</string>
+
+    <string name="shoe_name">Shoe name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="fragment_login">Login</string>
+    <string name="fragment_welcome">Welcome</string>
+    <string name="fragment_instruction">Instruction</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="logout"/>
+</resources>
