@@ -14,8 +14,8 @@ import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 
 class ShoeDetailFragment : Fragment() {
-
     private val viewModel: ShoeStoreViewModel by activityViewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,33 +28,11 @@ class ShoeDetailFragment : Fragment() {
             Navigation.findNavController(it).popBackStack()
         }
 
+        binding.viewModel = viewModel
+
         binding.btnSave.setOnClickListener { view ->
-            var name = ""
-            var size = 0.0
-            var company = ""
-            var description = ""
-
-            binding.edtShoeName.text?.let {
-                name = it.toString()
-            }
-
-            binding.edtShoeSize.text?.toString()?.toDouble()?.let {
-                size = it
-            }
-
-            binding.edtCompany.text?.toString()?.let {
-                company = it
-            }
-
-            binding.edtDescription.text?.toString()?.let {
-                description = it
-            }
-
-            // Should enable/disable button in this, but skip it
-            if (name.isNotEmpty() && size != 0.0 && company.isNotEmpty()) { // Description can be empty
-                viewModel.addShoe(name = name, size = size, company = company, description = description)
-                Navigation.findNavController(view).popBackStack()
-            }
+            viewModel.addShoe()
+            Navigation.findNavController(view).popBackStack()
         }
 
         return binding.root

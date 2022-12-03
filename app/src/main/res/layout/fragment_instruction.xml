@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".instruction.InstructionFragment">
 
+    <!--ConstraintLayout, to layout 2 TextViews constrained to each other -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:padding="20dp"
         android:layout_width="match_parent"

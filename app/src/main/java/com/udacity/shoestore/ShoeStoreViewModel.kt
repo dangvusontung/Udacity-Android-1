@@ -6,7 +6,12 @@ import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 import timber.log.Timber
 
-class ShoeStoreViewModel: ViewModel() {
+class ShoeStoreViewModel : ViewModel() {
+
+    var name: String = ""
+    var sizeText: String = ""
+    var company: String = ""
+    var description: String = ""
 
     private val _shoeList = MutableLiveData<MutableList<Shoe>>()
 
@@ -18,14 +23,20 @@ class ShoeStoreViewModel: ViewModel() {
         Timber.i("View Model cleared")
     }
 
-    fun addShoe(name: String, size: Double, company: String, description: String) {
+    fun addShoe() {
         var data = mutableListOf<Shoe>()
         _shoeList.value?.let {
             data = it
         }
-        val shoe = Shoe(name, size, company, description)
-        data.add(shoe)
-        _shoeList.value = data
+
+        val size = sizeText.toDouble()
+
+        // Should enable/disable button in this, but skip it
+        if (name.isNotEmpty() && size != 0.0 && company.isNotEmpty()) {
+            val shoe = Shoe(name, size, company, description)
+            data.add(shoe)
+            _shoeList.value = data
+        }
     }
 
 }

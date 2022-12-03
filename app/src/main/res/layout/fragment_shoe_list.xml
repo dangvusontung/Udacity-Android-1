@@ -9,11 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--ScrollView need a "root" view to contain other view, I choose ConstraintLayout because the FAB need to be pinned to the right bottom of the screen-->
         <androidx.constraintlayout.widget.ConstraintLayout
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
+            <!--LinearLayout, as the requirement-->
             <LinearLayout
                 app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/linearLayout"

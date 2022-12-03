@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".shoedetail.ShoeDetailFragment">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.ShoeStoreViewModel" />
+    </data>
+
+    <!-- In this XML, I use LinearLayout to put views vertically/horizontally -->
+    <!-- Using Constraint Layout in this screen will take a lot of effort to constraint views to others -->
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -24,6 +33,7 @@
                 android:layout_weight="4"
                 android:id="@+id/edtShoeName"
                 android:hint="@string/shoe_name"
+                android:text="@={viewModel.name}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
@@ -43,6 +53,7 @@
                 android:layout_weight="4"
                 android:id="@+id/edtCompany"
                 android:hint="@string/company"
+                android:text="@={viewModel.company}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
@@ -59,10 +70,11 @@
                 android:layout_height="match_parent"/>
 
             <EditText
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:layout_weight="4"
                 android:id="@+id/edtShoeSize"
                 android:hint="@string/shoe_size"
+                android:text="@={viewModel.sizeText}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
@@ -82,6 +94,7 @@
                 android:layout_weight="4"
                 android:id="@+id/edtDescription"
                 android:hint="@string/description"
+                android:text="@={viewModel.description}"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
